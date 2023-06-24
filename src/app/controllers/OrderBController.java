@@ -8,7 +8,6 @@ import app.views.OrderView;
 
 public class OrderBController implements BaseController {
 
-    private OrderView view;
     private OrderBModel model;
     private String[] data;
     private String orderCostRounded;
@@ -17,8 +16,8 @@ public class OrderBController implements BaseController {
     @Override
     public void handleData() {
 
-        view = new OrderView();
-        data = getData();
+        OrderView view = new OrderView();
+        data = view.getData();
         model = new OrderBModel();
 
         double orderCost = getOrderCost();
