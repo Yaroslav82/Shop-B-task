@@ -24,7 +24,7 @@ public class OrderAController implements BaseController {
 
     private double getOrderCost() {
         return model.getOrderCost(Integer.parseInt(data[1]),
-                Double.parseDouble(data[0]));
+                Double.parseDouble(data[2]));
     }
 
     private String formOutput() {
