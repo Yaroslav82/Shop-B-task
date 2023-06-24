@@ -10,14 +10,16 @@ public class OrderAController implements BaseController {
 
     private OrderAModel model;
     private String[] data;
-    private String costRounded;
+    private String orderCostRounded;
 
     @Override
     public void handleData() {
+
         OrderView view = new OrderView();
         data = view.getData();
         model = new OrderAModel();
-        costRounded = Rounder.roundValue(getOrderCost());
+
+        orderCostRounded = Rounder.roundValue(getOrderCost());
         view.getOutput(formOutput());
     }
 
@@ -28,6 +30,6 @@ public class OrderAController implements BaseController {
 
     private String formOutput() {
         return "\nOrder " + data[0] + " cost is " + Constants.CURRENCY +
-                " " + costRounded;
+                " " + orderCostRounded;
     }
 }
