@@ -40,8 +40,8 @@ public class OrderBController implements BaseController {
     }
 
     private String formOutput() {
-        return "\nOrder " + data[0] + " cost is " +  +
-                " " + orderCost + "\nDelivery cost is " + Constants.CURRENCY +
+        return "\nOrder " + data[0] + " cost is " +
+                " " + orderCostRounded + "\nDelivery cost is " + Constants.CURRENCY +
                 " " + deliveryCostRounded;
     }
 }
