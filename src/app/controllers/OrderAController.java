@@ -28,7 +28,7 @@ public class OrderAController implements BaseController {
     }
 
     private String formOutput() {
-        return "\nOrder " + data[0] + " cost is " + Constants. +
+        return "\nOrder " + data[0] + " cost is " + Constants.CURRENCY +
                 " " + costRounded;
     }
 }
