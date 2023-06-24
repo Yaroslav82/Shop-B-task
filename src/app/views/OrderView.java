@@ -1,9 +1,12 @@
 package app.views;
 
+import app.base.BaseView;
+
 import java.util.Scanner;
 
-public class OrderView {
+public class OrderView implements BaseView {
 
+    @Override
     public String[] getData() {
 
         Scanner scanner = new Scanner(System.in);
