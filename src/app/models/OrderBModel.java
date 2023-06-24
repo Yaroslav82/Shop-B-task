@@ -5,7 +5,7 @@ import app.utils.Constants;
 
 public class OrderBModel implements BaseModel {
 
-    public double deliveryRate = Constants.;
+    public double deliveryRate = Constants.DELIVERY_RATE;
 
     @Override
     public double getOrderCost(int quota, double price) {
