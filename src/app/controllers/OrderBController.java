@@ -30,10 +30,6 @@ public class OrderBController implements BaseController {
         view.getOutput(formOutput());
     }
 
-    private String[] getData() {
-        return
-    }
-
     private double getOrderCost() {
         return model.getOrderCost(Integer.parseInt(data[1]),
                 Double.parseDouble(data[3]));
