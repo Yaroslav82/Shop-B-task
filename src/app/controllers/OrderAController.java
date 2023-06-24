@@ -22,10 +22,6 @@ public class OrderAController implements {
         view.getOutput(formOutput());
     }
 
-    private String[] getData() {
-
-    }
-
     private double getOrderCost() {
         return model.getOrderCost(Integer.parseInt(data[1]),
                 Double.parseDouble(data[0]));
