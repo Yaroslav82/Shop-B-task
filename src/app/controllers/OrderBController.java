@@ -6,7 +6,7 @@ import app.utils.Constants;
 import app.utils.Rounder;
 import app.views.OrderView;
 
-public class OrderBController extends BaseController {
+public class OrderBController implements BaseController {
 
     private OrderView view;
     private OrderBModel model;
@@ -14,6 +14,7 @@ public class OrderBController extends BaseController {
     private String orderCostRounded;
     private String deliveryCostRounded;
 
+    @Override
     public void handleData() {
 
         view = new OrderView();
